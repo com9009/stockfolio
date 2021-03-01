@@ -1,0 +1,4 @@
+.idea/
+.vscode/
+trading/__pycache__/
+test/__pycache__/
