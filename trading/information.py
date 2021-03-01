@@ -49,7 +49,7 @@ class Information(pykka.ThreadingActor):
         super().__init__()
         self.op = op
         self.args = args
-        self.id = super().actor_urn
+        self.id = "Information-" + str(super().actor_urn)
         self.refresh_freq = refresh_freq
         self.is_auto_refresh = is_auto_refresh
         self.cached_information = None
