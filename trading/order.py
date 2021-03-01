@@ -40,7 +40,6 @@ class Order(pykka.ThreadingActor):
     def __init__(self,
                  order_func,
                  *args,
-                 id: str = None,
                  check_interval: information.RefreshFreq = None,
                  auto_check: bool = False,
                  order_api: OrderAPI = None
