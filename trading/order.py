@@ -30,7 +30,8 @@ class OrderAPI(object):
 
 
 """ 
-    order_func return : [(stock, value)] if value > 0 buy, elif value < 0 sell
+    order_func return : [(stock, value)] 
+                        if value > 0 buy, elif value < 0 sell
     args : information
     
     None value in order_api is for test 
@@ -47,7 +48,7 @@ class Order(pykka.ThreadingActor):
         super().__init__()
         self.order_func = order_func
         self.args = args
-        self.id = f"Order-{str(uuid.uuid1())}" if id is not None else id
+        self.id = super().actor_urn
         self.check_interval = check_interval
         self.is_auto_check = auto_check
         self.order_api = order_api
