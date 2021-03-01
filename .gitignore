@@ -1,7 +1,7 @@
 .idea/
 .vscode/
-trading/__pycache__/
-test/__pycache__/
+trading/__pycache__/*
+test/__pycache__/*
 
 
 # Created by https://www.toptal.com/developers/gitignore/api/python,vscode,pycharm
@@ -259,3 +259,6 @@ dmypy.json
 *.code-workspace
 
 # End of https://www.toptal.com/developers/gitignore/api/python,vscode,pycharm
+
+__pycache__/
+__pycache__/*
